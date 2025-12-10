@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共有の基本と権限 | Google Workspace 完全ガイド</title>
+    <meta name="description" content="「閲覧者」「コメント可」「編集者」の使い分け、知っていますか？トラブルを防ぐための正しい共有設定と権限の考え方を図解します。">
+    <meta property="og:title" content="共有の基本と権限 | Google Workspace 完全ガイド">
+    <meta property="og:description" content="閲覧者？編集者？もう迷わない共有権限の使い分けテクニック。">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <span>G</span>Workspace ガイド
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="article-ms-vs-google.html">違いとは</a></li>
+                <li><a href="article-sharing.html" class="active">共有の基本</a></li>
+                <li><a href="article-pdf.html">印刷・PDF</a></li>
+                <li><a href="article-forms.html">フォーム</a></li>
+                <li><a href="article-ideas.html">活用例</a></li>
+                <li><a href="article-education.html">Education版</a></li>
+                <li><a href="article-security.html">セキュリティ</a></li>
+                <li><a href="article-faq.html">Q&A</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="burger-menu" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+
+    <main>
+        <article>
+            <div class="article-header reveal">
+                <h1>「共有」の基本と権限の考え方</h1>
+                <p>Google Workspaceの最大の武器である「共有」をマスターしましょう。</p>
+            </div>
+
+            <div class="content-body reveal reveal-delay-2">
+                <!-- Beginner Intro -->
+                <div class="learning-box">
+                    <div class="learning-title">🌱 この記事でわかること</div>
+                    <ul class="learning-list">
+                        <li>右上の「共有」ボタンの正しい使い方と手順</li>
+                        <li>「閲覧者」と「編集者」の権限の違いと使い分け</li>
+                        <li>間違って送ってしまった時の対処法（共有の解除）</li>
+                    </ul>
+                </div>
+
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-target="tab-summary">基本の解説（要点）</button>
+                        <button class="tab-btn" data-target="tab-details">操作手順（詳しく見る）</button>
+                    </div>
+
+                    <!-- TAB 1: QUICK SUMMARY (Original Content) -->
+                    <div id="tab-summary" class="tab-content active">
+                        <h2>1. 権限の種類</h2>
+                        <p>Google Workspaceの共有設定には、主に3つの権限があります。相手にどこまでの操作を許可するか、慎重に選びましょう。</p>
+
+                        <div class="comparison-table">
+                            <div class="comp-header">
+                                <div class="comp-cell">権限</div>
+                                <div class="comp-cell">閲覧</div>
+                                <div class="comp-cell">編集</div>
+                            </div>
+                            <div class="comp-row">
+                                <div class="comp-cell feature-name" data-label="権限">閲覧者</div>
+                                <div class="comp-cell center winner" data-label="閲覧">〇</div>
+                                <div class="comp-cell center" data-label="編集">×</div>
+                            </div>
+                            <div class="comp-row">
+                                <div class="comp-cell feature-name" data-label="権限">閲覧者（コメント可）</div>
+                                <div class="comp-cell center winner" data-label="閲覧">〇</div>
+                                <div class="comp-cell center" data-label="編集">△(提案のみ)</div>
+                            </div>
+                            <div class="comp-row">
+                                <div class="comp-cell feature-name" data-label="権限">編集者</div>
+                                <div class="comp-cell center winner" data-label="閲覧">〇</div>
+                                <div class="comp-cell center winner" data-label="編集">〇</div>
+                            </div>
+                        </div>
+
+                        <h2>2. 安全に共有するための注意点</h2>
+                        <p>「リンクを知っている全員」という設定は便利ですが、意図しない人にまで情報が漏れるリスクがあります。基本的には、<strong>相手のメールアドレスを指定して共有</strong>する方法を推奨します。
+                        </p>
+
+                        <div class="simulator-card reveal reveal-delay-3" style="text-align: left;">
+                            <h3>🤔 権限の選び方クイズ（答え）</h3>
+                            <p><strong>Q. 上司に資料を修正してほしい時は？</strong><br>
+                                A. <strong>「編集者」</strong>を選びましょう。修正権限がないと作業できません。</p>
+
+                            <p><strong>Q. 生徒にプリントを見せたいだけなら？</strong><br>
+                                A. <strong>「閲覧者」</strong>が安全です。勝手に書き換えられるのを防げます。</p>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2: STEP BY STEP GUIDE (New Content) -->
+                    <div id="tab-details" class="tab-content">
+                        <div class="step-guide">
+                            <div class="step-item">
+                                <div class="step-header">
+                                    <span class="step-number">01</span>
+                                    <h3 class="step-title">右上の「共有」ボタンをクリック</h3>
+                                </div>
+                                <p>ファイルを開いた状態で、画面の右上にある青色の「共有」ボタンを探してください。鍵のマークがついている場合は「自分のみ」の状態です。</p>
+
+                                <!-- Mockup 1: Header Button -->
+                                <div class="ui-mockup">
+                                    <div class="ui-header">
+                                        <div class="ui-header-title" style="flex:1;">無題のドキュメント</div>
+                                        <button class="ui-btn-blue">🔒 共有</button>
+                                        <div class="ui-avatar" style="width:24px; height:24px; font-size: 0.7rem;">T
+                                        </div>
+                                    </div>
+                                    <div class="ui-body" style="height: 100px; background: white;">
+                                        <!-- Document content implication -->
+                                        <div style="height: 8px; width: 60%; background: #f1f3f4; margin-bottom: 8px;">
+                                        </div>
+                                        <div style="height: 8px; width: 80%; background: #f1f3f4; margin-bottom: 8px;">
+                                        </div>
+                                        <div style="height: 8px; width: 40%; background: #f1f3f4;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-header">
+                                    <span class="step-number">02</span>
+                                    <h3 class="step-title">相手の名前を入力して候補をクリック</h3>
+                                </div>
+                                <p>メールアドレスを全部打たなくても大丈夫です。相手の<strong>名前を入力すると候補が表示される</strong>ので、そこから正しい相手をクリックして選びましょう。
+                                </p>
+
+                                <!-- Mockup 2: Add People Dialog (Autocomplete) -->
+                                <div class="ui-mockup">
+                                    <div class="ui-body">
+                                        <div style="font-size: 1.1rem; margin-bottom: 1rem; color: #202124;">
+                                            ユーザーやグループを追加</div>
+                                        <div class="ui-input-group">
+                                            <input type="text" class="ui-input" value="田中" style="width: 40px;">
+                                            <span class="blinking-cursor">|</span>
+                                        </div>
+
+                                        <!-- Autocomplete Dropdown Mockup -->
+                                        <div
+                                            style="position:absolute; top: 5.5rem; left: 1.5rem; width: 300px; background: white; border: 1px solid #dadce0; box-shadow: 0 4px 6px rgba(0,0,0,0.2); border-radius: 0 0 4px 4px; z-index: 10;">
+                                            <div class="ui-drop-item hover"
+                                                style="display: flex; align-items: center; gap: 10px; padding: 10px;">
+                                                <div class="ui-avatar">田</div>
+                                                <div>
+                                                    <div style="font-weight: 500;">田中 先生</div>
+                                                    <div style="font-size: 0.8rem; color: #5f6368;">tanaka@school.ed.jp
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ui-drop-item"
+                                                style="display: flex; align-items: center; gap: 10px; padding: 10px;">
+                                                <div class="ui-avatar" style="background: #fbbc04;">田</div>
+                                                <div>
+                                                    <div style="font-weight: 500;">田中 生徒</div>
+                                                    <div style="font-size: 0.8rem; color: #5f6368;">
+                                                        s_tanaka@student.ed.jp</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div style="display:flex; gap:0.5rem; margin-top: 5rem;">
+                                            <div style="height:30px; flex:1;"></div>
+                                            <div class="ui-select" style="opacity: 0.5;">編集者 ▼</div>
+                                            <button class="ui-btn-blue" disabled
+                                                style="background: #e8f0fe; color: #aecbfa; box-shadow: none;">送信</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-header">
+                                    <span class="step-number">03</span>
+                                    <h3 class="step-title">権限を選んで送信</h3>
+                                </div>
+                                <p>右側のプルダウンメニューから「閲覧者」「編集者」などを選びます。最後に右下の「送信」ボタンを押せば共有完了です。</p>
+
+                                <!-- Mockup 3: Permission Select -->
+                                <div class="ui-mockup">
+                                    <div class="ui-body">
+                                        <div class="ui-dropdown-row">
+                                            <div class="ui-user-info">
+                                                <div class="ui-avatar">S</div>
+                                                <div>
+                                                    <div style="font-size:0.9rem; font-weight:500;">school-teacher</div>
+                                                    <div style="font-size:0.75rem; color:#5f6368;">teacher@school.ed.jp
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ui-select active">編集者 ▼</div>
+                                        </div>
+                                        <div
+                                            style="position:absolute; right:1.5rem; top:3.5rem; background:white; border:1px solid #dadce0; box-shadow:0 2px 4px rgba(0,0,0,0.2); border-radius:4px; z-index:5;">
+                                            <div class="ui-drop-item">閲覧者</div>
+                                            <div class="ui-drop-item">閲覧者（コメント可）</div>
+                                            <div class="ui-drop-item highlight">編集者 ✓</div>
+                                        </div>
+                                        <div style="text-align:right; margin-top: 100px;">
+                                            <button class="ui-btn-blue">送信</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>リンクを知っている全員への共有</h2>
+            </div>
+        </article>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3><span>G</span>Workspace ガイド</h3>
+                    <p>初心者でも迷わない、現場ですぐ使えるGoogle Workspaceの活用ノウハウ集。</p>
+                </div>
+                <div class="footer-column">
+                    <h3>コンテンツ</h3>
+                    <ul class="footer-links">
+                        <li><a href="article-ms-vs-google.html">Officeとの違い</a></li>
+                        <li><a href="article-sharing.html">共有の仕組み</a></li>
+                        <li><a href="article-pdf.html">印刷とPDF</a></li>
+                        <li><a href="article-forms.html">フォーム活用</a></li>
+                        <li><a href="article-ideas.html">活用例</a></li>
+                        <li><a href="article-education.html">Education版</a></li>
+                        <li><a href="article-security.html">セキュリティ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>リンク</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://workspace.google.com/" target="_blank" rel="noopener">Google Workspace
+                                公式</a>
+                        </li>
+                        <li><a href="https://support.google.com/" target="_blank" rel="noopener">Google ヘルプ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="creator-credit">
+                <p>Created by <strong>外﨑 顯博</strong> (Akihiro Tozaki)</p>
+                <div class="creator-links">
+                    <a href="https://note.com/tozaki_edu" target="_blank" rel="noopener">Note</a>
+                    <a href="https://researchmap.jp/researchers?q=%E5%A4%96%EF%A8%91%E9%A1%95%E5%8D%9A" target="_blank"
+                        rel="noopener">ResearchMap</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Life with Google Workspace</p>
+            </div>
+        </footer>
+
+</body>
+
+</html>

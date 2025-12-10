@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Googleフォームでアンケート・小テスト作成 | Google Workspace 完全ガイド</title>
+    <meta name="description" content="校務効率化の切り札「Googleフォーム」。自動採点テストの作り方や、保護者アンケートの集計を自動化する方法を解説します。">
+    <meta property="og:title" content="Googleフォーム活用ガイド | Google Workspace 完全ガイド">
+    <meta property="og:description" content="丸付け不要、集計不要。働き方改革の第一歩はフォームから。">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <span>G</span>Workspace ガイド
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <!-- Will be updated in next step -->
+                <li><a href="article-ms-vs-google.html">違いとは</a></li>
+                <li><a href="article-sharing.html">共有の基本</a></li>
+                <li><a href="article-pdf.html">印刷・PDF</a></li>
+                <li><a href="article-forms.html" class="active">フォーム</a></li>
+                <li><a href="article-ideas.html">活用例</a></li>
+                <li><a href="article-education.html">Education版</a></li>
+                <li><a href="article-security.html">セキュリティ</a></li>
+                <li><a href="article-faq.html">Q&A</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="burger-menu" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+
+    <main>
+        <article>
+            <a href="index.html" class="back-link">← トップに戻る</a>
+
+            <div class="article-header reveal">
+                <h1>アンケート・小テストの絶対的エース「Googleフォーム」</h1>
+                <p>「紙で配って、回収して、手入力で集計」…その作業、もう終わりにしませんか？</p>
+            </div>
+
+            <div class="content-body reveal reveal-delay-2">
+                <!-- Beginner Intro -->
+                <div class="learning-box">
+                    <div class="learning-title">🌱 この記事でわかること</div>
+                    <ul class="learning-list">
+                        <li>自動採点できる「小テスト」の作り方</li>
+                        <li>保護者アンケートの集計を「0秒」にする方法</li>
+                        <li>回答の締め切り設定と、結果の確認方法</li>
+                    </ul>
+                </div>
+
+                <h2>1. 基本の作り方（アンケート）</h2>
+                <p>Googleドライブの「新規」ボタンから「Googleフォーム」を選びます。質問文を入力し、回答形式（ラジオボタン、記述式など）を選ぶだけで、直感的にアンケートが作れます。</p>
+
+                <!-- UI Mockup: Form Editor -->
+                <div class="ui-mockup" style="margin: 2rem 0;">
+                    <div class="ui-header" style="background:#673ab7; color:white;">
+                        <div class="ui-header-title" style="color:white;">無題のフォーム</div>
+                        <div style="font-size:0.8rem; opacity:0.8;">すべての変更を保存しました</div>
+                    </div>
+                    <div class="ui-body" style="background:#f0ebf8; padding: 2rem;">
+                        <div
+                            style="background:white; padding:1.5rem; border-radius:8px; border-top: 10px solid #673ab7; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                            <div
+                                style="font-size:1.5rem; margin-bottom:1rem; border-bottom:1px solid #e0e0e0; padding-bottom:0.5rem;">
+                                第1回 進路希望調査</div>
+                            <div style="color:#5f6368; font-size:0.9rem;">来年度の希望について回答してください。</div>
+                        </div>
+
+                        <div
+                            style="background:white; padding:1.5rem; border-radius:8px; margin-top:1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 5px solid #4285f4;">
+                            <div
+                                style="font-weight:bold; margin-bottom:1rem; display:flex; justify-content:space-between;">
+                                <span>氏名</span>
+                                <span style="color:#5f6368; font-weight:normal; font-size:0.8rem;">記述式</span>
+                            </div>
+                            <div style="border-bottom:1px dotted #dbdbdb; padding-bottom:0.5rem; color:#dbdbdb;">回答を入力
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>2. 「小テスト」モードへの切り替え</h2>
+                <p>ここが先生にとって最大のメリットです。設定で「テスト」をオンにすると、正解を設定して<strong>自動で採点</strong>させることができます。</p>
+                <div class="feature-card">
+                    <div class="feature-icon">💯</div>
+                    <div class="feature-content">
+                        <h3>設定手順</h3>
+                        <p>画面上部の「設定」タブをクリックし、「テストにする」というスイッチをオンにします。これだけで、各質問に「解答集を作成」ボタンが現れ、点数と正解を指定できるようになります。</p>
+                    </div>
+                </div>
+
+                <h2>3. 結果の集計</h2>
+                <p>回答が集まると、「回答」タブで円グラフや棒グラフが自動生成されます。「スプレッドシートにリンク」ボタンを押せば、一覧表として書き出すことも可能です。</p>
+
+            </div>
+        </article>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3><span>G</span>Workspace ガイド</h3>
+                    <p>初心者でも迷わない、現場ですぐ使えるGoogle Workspaceの活用ノウハウ集。</p>
+                </div>
+                <div class="footer-column">
+                    <h3>コンテンツ</h3>
+                    <div class="creator-links">
+                        <a href="https://note.com/tozaki_edu" target="_blank" rel="noopener">Note</a>
+                        <a href="https://researchmap.jp/researchers?q=%E5%A4%96%EF%A8%91%E9%A1%95%E5%8D%9A"
+                            target="_blank" rel="noopener">ResearchMap</a>
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="article-ms-vs-google.html">Officeとの違い</a></li>
+                        <li><a href="article-sharing.html">共有の仕組み</a></li>
+                        <li><a href="article-pdf.html">印刷とPDF</a></li>
+                        <li><a href="article-forms.html">フォーム活用</a></li>
+                        <li><a href="article-ideas.html">活用例</a></li>
+                        <li><a href="article-education.html">Education版</a></li>
+                        <li><a href="article-security.html">セキュリティ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>リンク</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://workspace.google.com/" target="_blank" rel="noopener">Google Workspace
+                                公式</a></li>
+                        <li><a href="https://support.google.com/" target="_blank" rel="noopener">Google ヘルプ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="creator-credit">
+                <p>Created by <strong>外﨑 顯博</strong> (Akihiro Tozaki)</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Life with Google Workspace</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

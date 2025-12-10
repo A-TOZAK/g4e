@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>印刷・PDF化手順 | Google Workspace 活用術</title>
+    <meta name="description" content="Googleドキュメントに印刷ボタンがない？PDFで送りたい？そんな時の正しい手順とコツを解説。レイアウト崩れを防ぐ方法も。">
+    <meta property="og:title" content="印刷・PDF化手順 | Google Workspace 活用術">
+    <meta property="og:description" content="印刷ボタンが見つからないあなたへ。正しいPDF化と印刷の手順。">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <span>G</span>Workspace ガイド
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="article-ms-vs-google.html">違いとは</a></li>
+                <li><a href="article-sharing.html">共有の基本</a></li>
+                <li><a href="article-pdf.html" class="active">印刷・PDF</a></li>
+                <li><a href="article-forms.html">フォーム</a></li>
+                <li><a href="article-ideas.html">活用例</a></li>
+                <li><a href="article-education.html">Education版</a></li>
+                <li><a href="article-security.html">セキュリティ</a></li>
+                <li><a href="article-faq.html">Q&A</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="burger-menu" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+
+    <main>
+        <article>
+            <div class="article-header reveal">
+                <h1>印刷・PDF化の基本テクニック</h1>
+                <p>「レイアウトが崩れる…」そんな悩みも、正しい手順でPDFにすれば解決します。</p>
+            </div>
+
+            <div class="content-body reveal reveal-delay-2">
+                <!-- Beginner Intro -->
+                <div class="learning-box">
+                    <div class="learning-title">🌱 この記事でわかること</div>
+                    <ul class="learning-list">
+                        <li>画面の見た目通りにきれいに印刷するコツ</li>
+                        <li>GoogleドキュメントをPDFファイルとして保存（ダウンロード）する方法</li>
+                        <li>印刷時にレイアウト崩れを防ぐためのポイント</li>
+                    </ul>
+                </div>
+                <p>Googleドキュメントはブラウザ上で動くため、「印刷ボタンが見当たらない」「家のプリンターで印刷できない」といった声をよく聞きます。また、編集できない状態で相手に送りたい場合、「PDF」にするのが定石です。
+                </p>
+
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-target="tab-summary">基本の解説（要点）</button>
+                        <button class="tab-btn" data-target="tab-details">操作手順（詳しく見る）</button>
+                    </div>
+
+                    <!-- TAB 1: SUMMARY -->
+                    <div id="tab-summary" class="tab-content active">
+                        <h2>1. 「印刷」ではなく「ダウンロード」</h2>
+                        <p>Google
+                            ドキュメントやスライドは、そのまま印刷ボタンを押すのではなく、一度<strong>PDF形式でダウンロード</strong>してから印刷することをおすすめします。これにより、レイアウト崩れを防ぐことができます。
+                        </p>
+
+                        <h2>2. PDF化のメリット</h2>
+                        <ul style="margin-bottom: 2rem;">
+                            <li>フォントや画像の位置がズレない</li>
+                            <li>相手がGoogleアカウントを持っていなくても送れる</li>
+                            <li>コンビニ等でも印刷しやすい</li>
+                        </ul>
+                    </div>
+
+                    <!-- TAB 2: DETAILS -->
+                    <div id="tab-details" class="tab-content">
+                        <div class="step-guide">
+                            <div class="step-item">
+                                <div class="step-header">
+                                    <span class="step-number">01</span>
+                                    <h3 class="step-title">メニューの「ファイル」をクリック</h3>
+                                </div>
+                                <p>画面の左上にあるメニューバーから、「ファイル」という項目をクリックします。</p>
+
+                                <!-- Mockup 1: File Menu -->
+                                <div class="ui-mockup">
+                                    <div class="ui-header"
+                                        style="flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+                                        <div class="ui-header-title">学級通信_4月号</div>
+                                        <div class="ui-menu-bar">
+                                            <div class="ui-menu-item active">ファイル</div>
+                                            <div class="ui-menu-item">編集</div>
+                                            <div class="ui-menu-item">表示</div>
+                                            <div class="ui-menu-item">挿入</div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-body" style="height: 120px;">
+                                        <div class="ui-dropdown" style="top: 3.5rem; left: 0.5rem;">
+                                            <div class="ui-drop-item">新規作成</div>
+                                            <div class="ui-drop-item">開く</div>
+                                            <div class="ui-drop-item">コピーを作成</div>
+                                            <div class="ui-drop-item">共有</div>
+                                            <hr style="border:0; border-top:1px solid #e5e7eb; margin:0.2rem 0;">
+                                            <div class="ui-drop-item hover">ダウンロード ▶</div>
+                                            <div class="ui-drop-item">名前を変更</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-header">
+                                    <span class="step-number">02</span>
+                                    <h3 class="step-title">「ダウンロード」にカーソルを合わせる</h3>
+                                </div>
+                                <p>メニューの中から「ダウンロード」を探し、マウスカーソルを合わせます（クリックしなくても右にメニューが出ます）。</p>
+
+                                <!-- Mockup 2: Download Submenu -->
+                                <div class="ui-mockup">
+                                    <div class="ui-header" style="padding-bottom: 2rem;">
+                                        <!-- Visual context only -->
+                                        <div class="ui-menu-bar">
+                                            <div class="ui-menu-item active">ファイル</div>
+                                            <div class="ui-menu-item">編集</div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-body" style="height: 140px;">
+                                        <div class="ui-dropdown" style="top: 0.5rem; left: 0.5rem;">
+                                            <div class="ui-drop-item">コピーを作成</div>
+                                            <div class="ui-drop-item">共有</div>
+                                            <div class="ui-drop-item hover" style="background:#e8f0fe; color:#1967d2;">
+                                                ダウンロード ▶</div>
+                                            <div class="ui-drop-item">名前を変更</div>
+                                        </div>
+                                        <div class="ui-submenu" style="top: 3.5rem; left: 13.5rem;">
+                                            <div class="ui-drop-item">Microsoft Word (.docx)</div>
+                                            <div class="ui-drop-item">OpenDocument (.odt)</div>
+                                            <div class="ui-drop-item highlight">PDF ドキュメント (.pdf)</div>
+                                            <div class="ui-drop-item">テキスト (.txt)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-header">
+                                    <span class="step-number">03</span>
+                                    <h3 class="step-title">「PDF ドキュメント」を選択</h3>
+                                </div>
+                                <p>出てきたリストの中から「PDF ドキュメント (.pdf)」をクリックします。自動的にダウンロードが始まります。</p>
+
+                                <div style="text-align: center; margin-top: 1rem; color: var(--primary-color);">
+                                    <div style="font-size: 3rem;">⬇️</div>
+                                    <p style="font-weight: 700;">ダウンロード完了！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>PDFとは？</h2>
+                <p>PDF（ピーディーエフ）は、相手がどんなパソコンやスマホを使っていても、レイアウトが崩れずに「紙のような状態」で見られるファイル形式です。見積書や請求書、公式な案内文などは、Wordやドキュメント形式のまま送らず、PDFにして送るのがビジネスマナーです。
+                </p>
+            </div>
+        </article>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-link">← トップページに戻る</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3><span>G</span>Workspace ガイド</h3>
+                <p>初心者でも迷わない、現場ですぐ使えるGoogle Workspaceの活用ノウハウ集。</p>
+            </div>
+            <div class="footer-column">
+                <h3>コンテンツ</h3>
+                <ul class="footer-links">
+                    <li><a href="article-ms-vs-google.html">Officeとの違い</a></li>
+                    <li><a href="article-sharing.html">共有の仕組み</a></li>
+                    <li><a href="article-pdf.html">印刷とPDF</a></li>
+                    <li><a href="article-forms.html">フォーム活用</a></li>
+                    <li><a href="article-ideas.html">活用例</a></li>
+                    <li><a href="article-education.html">Education版</a></li>
+                    <li><a href="article-security.html">セキュリティ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>リンク</h3>
+                <ul class="footer-links">
+                    <li><a href="https://workspace.google.com/" target="_blank" rel="noopener">Google Workspace 公式</a>
+                    </li>
+                    <li><a href="https://support.google.com/" target="_blank" rel="noopener">Google ヘルプ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="creator-credit">
+            <p>Created by <strong>外﨑 顯博</strong> (Akihiro Tozaki)</p>
+            <div class="creator-links">
+                <a href="https://note.com/tozaki_edu" target="_blank" rel="noopener">Note</a>
+                <a href="https://researchmap.jp/researchers?q=%E5%A4%96%EF%A8%91%E9%A1%95%E5%8D%9A" target="_blank"
+                    rel="noopener">ResearchMap</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Life with Google Workspace</p>
+        </div>
+    </footer>
+</body>
+
+</html>

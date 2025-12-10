@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校種別・活用アイデア集 | Google Workspace 活用ガイド</title>
+    <meta name="description" content="小学校・中学校・高校、それぞれの段階に合わせたGoogle Workspaceの活用アイデア集。明日からの授業ですぐ使える実践例を3つずつ厳選。">
+    <meta property="og:title" content="校種別・活用アイデア集 | Google Workspace 活用ガイド">
+    <meta property="og:description" content="小学校から高校まで、校種別のGoogle Workspace活用事例9選。">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        .school-section {
+            margin-bottom: 6rem;
+            /* Increased whitespace for rhythm */
+        }
+
+        .school-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .school-icon {
+            font-size: 2rem;
+            background: white;
+            padding: 0.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .idea-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .idea-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s;
+        }
+
+        .idea-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .idea-card h3 {
+            font-size: 1.1rem;
+            margin: 0 0 0.5rem 0;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .idea-tool-tag {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            background: #f3f4f6;
+            color: #4b5563;
+            border-radius: 4px;
+            font-weight: normal;
+            margin-left: auto;
+        }
+
+        [data-theme="dark"] .school-header {
+            border-bottom-color: rgba(255, 255, 255, 0.1);
+        }
+
+        [data-theme="dark"] .school-icon {
+            background: #1f2937;
+        }
+
+        [data-theme="dark"] .idea-card {
+            background: rgba(31, 41, 55, 0.5);
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        [data-theme="dark"] .idea-tool-tag {
+            background: #374151;
+            color: #d1d5db;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <span>G</span>Workspace ガイド
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="article-ms-vs-google.html">違いとは</a></li>
+                <li><a href="article-sharing.html">共有の基本</a></li>
+                <li><a href="article-pdf.html">印刷・PDF</a></li>
+                <li><a href="article-forms.html">フォーム</a></li>
+                <li><a href="article-ideas.html" class="active">活用例</a></li>
+                <li><a href="article-education.html">Education版</a></li>
+                <li><a href="article-security.html">セキュリティ</a></li>
+                <li><a href="article-faq.html">Q&A</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="burger-menu" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+
+    <main>
+        <article class="article-detail">
+            <a href="index.html" class="back-link">← トップに戻る</a>
+
+            <div class="article-header reveal">
+                <h1>校種別・活用アイデア集</h1>
+                <p>明日からの授業や校務ですぐに使える、実践的な活用事例をご紹介します。</p>
+            </div>
+
+            <div class="content-body reveal reveal-delay-2">
+                <!-- Beginner Intro -->
+                <div class="learning-box">
+                    <div class="learning-title">🌱 この記事でわかること</div>
+                    <ul class="learning-list">
+                        <li>【小学校・中学校・高校】それぞれの現場に合った具体的な活用例</li>
+                        <li>授業準備やアンケート集計などの業務効率化のヒント</li>
+                        <li>ICTを効果的に取り入れるための最初のステップ</li>
+                    </ul>
+                </div>
+
+                <!-- Elementary School -->
+                <section class="school-section">
+                    <div class="school-header">
+                        <span class="school-icon">🎒</span>
+                        <h2>小学校での活用 (Visual & Basic)</h2>
+                    </div>
+                    <div class="idea-grid">
+                        <div class="idea-card">
+                            <h3>アサガオの観察日記 <span class="idea-tool-tag">カメラ</span></h3>
+                            <p>タブレットのカメラ機能で毎日の成長を撮影。スライドに画像を貼り付けて一言コメントを入れるだけで、成長記録が完成します。</p>
+                        </div>
+                        <div class="idea-card">
+                            <h3>町たんけんマップ <span class="idea-tool-tag">スライド</span></h3>
+                            <p>グループ探検で撮影した写真を持ち寄り、Googleマップの画像と組み合わせて共同編集。クラスだけのオリジナルマップを作れます。</p>
+                        </div>
+                        <div class="idea-card">
+                            <h3>朝の健康観察クイズ <span class="idea-tool-tag">フォーム</span></h3>
+                            <p>毎朝の健康チェックをGoogleフォームで。「元気ですか？」の質問に加え、日替わりクイズを一問入れると回答率がアップします。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Junior High School -->
+                <section class="school-section">
+                    <div class="school-header">
+                        <span class="school-icon">🏫</span>
+                        <h2>中学校での活用 (Reflection & Team)</h2>
+                    </div>
+                    <div class="idea-grid">
+                        <div class="idea-card">
+                            <h3>体育のフォーム分析 <span class="idea-tool-tag">カメラ/ドライブ</span></h3>
+                            <p>マット運動や跳び箱の様子をペアで撮影し合い、動画をその場で再生して振り返り。客観的に自分の動きを見ることで改善点が分かります。</p>
+                        </div>
+                        <div class="idea-card">
+                            <h3>委員会・部活の議事録 <span class="idea-tool-tag">ドキュメント</span></h3>
+                            <p>生徒会や委員会の話し合いをドキュメントで共同編集。リアルタイムに記録が残るため、黒板に書く時間を短縮し、議論に集中できます。</p>
+                        </div>
+                        <div class="idea-card">
+                            <h3>英語プレゼン作成 <span class="idea-tool-tag">スライド</span></h3>
+                            <p>「My Dream」などのテーマでスライド作成。画像検索を使って視覚的に訴える資料を作り、英語で発表する練習に最適です。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- High School -->
+                <section class="school-section">
+                    <div class="school-header">
+                        <span class="school-icon">🎓</span>
+                        <h2>高校での活用 (Inquiry & Logic)</h2>
+                    </div>
+                    <div class="idea-grid">
+                        <div class="idea-card">
+                            <h3>探究学習の進捗管理 <span class="idea-tool-tag">スプレッドシート</span></h3>
+                            <p>長期にわたる探究プロジェクトの工程表（ガントチャート）をシートで管理。班員全員が進捗を可視化し、計画的に進めます。</p>
+                        </div>
+                        <div class="idea-card">
+                            <h3>小論文の相互添削 <span class="idea-tool-tag">ドキュメント</span></h3>
+                            <p>「提案モード」を使って、お互いの小論文にコメントや修正案を入れ合います。修正履歴が残るため、推敲の過程も評価対象にできます。</p>
+                        </div>
+                        <div class="idea-card">
+                            <h3>理科実験のデータ分析 <span class="idea-tool-tag">スプレッドシート</span></h3>
+                            <p>実験結果のデータを入力し、関数を使って平均値を計算したり、散布図を作成して相関関係を分析したりします。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="tip-box">
+                    <strong>💡 ポイント</strong>
+                    いきなり高度なことをしようとせず、「まずは先生が使ってみる」「係活動で使ってみる」という小さな一歩から始めるのが成功の秘訣です。
+                </div>
+
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3><span>G</span>Workspace ガイド</h3>
+                <p>初心者でも迷わない、現場ですぐ使えるGoogle Workspaceの活用ノウハウ集。</p>
+            </div>
+            <div class="footer-column">
+                <h3>コンテンツ</h3>
+                <div class="creator-links">
+                    <a href="https://note.com/tozaki_edu" target="_blank" rel="noopener">Note</a>
+                    <a href="https://researchmap.jp/researchers?q=%E5%A4%96%EF%A8%91%E9%A1%95%E5%8D%9A" target="_blank"
+                        rel="noopener">ResearchMap</a>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="article-forms.html">フォーム活用</a></li>
+                    <li><a href="article-ideas.html">活用例</a></li>
+                    <li><a href="article-education.html">Education版</a></li>
+                    <li><a href="article-security.html">セキュリティ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+</body>
+
+</html>
