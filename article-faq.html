@@ -9,51 +9,56 @@
     <meta property="og:title" content="よくある質問 (Q&A) | Google Workspace 完全ガイド">
     <meta property="og:description" content="先生たちの「困った」「不安」を解決するQ&A集。">
     <meta property="og:type" content="article">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo">
-            <span>G</span>Workspace ガイド
-        </a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="article-ms-vs-google.html">Officeとの違い</a></li>
-                <li><a href="article-sharing.html">共有の仕組み</a></li>
-                <li><a href="article-pdf.html">印刷とPDF</a></li>
-                <li><a href="article-forms.html">フォーム</a></li>
-                <li><a href="article-ideas.html">活用例</a></li>
-                <li><a href="article-education.html">Education版</a></li>
-                <li><a href="article-security.html">セキュリティ</a></li>
-                <li><a href="article-faq.html" class="active">Q&A</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span>G</span>Workspace ガイド
+            </a>
 
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="burger-menu" aria-label="メニューを開く">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="メニュー開閉">
+            <label for="nav-toggle" class="burger-menu" role="button" aria-controls="nav-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="article-ms-vs-google.html">違いとは</a></li>
+                    <li><a href="article-sharing.html">共有の基本</a></li>
+                    <li><a href="article-pdf.html">印刷・PDF</a></li>
+                    <li><a href="article-forms.html">フォーム活用</a></li>
+                    <li><a href="article-ideas.html">活用例</a></li>
+                    <li><a href="article-education.html">Education版</a></li>
+                    <li><a href="article-prompts.html">プロンプト集</a></li>
+                    <li><a href="article-security.html">セキュリティ</a></li>
+                    <li><a href="article-faq.html" class="active">Q&A</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <article>
-            <div class="article-header reveal">
+            <div class="article-header">
                 <h1>よくある質問 (Q&A)</h1>
                 <p>はじめて使う先生がつまずきやすいポイントや、よくある不安にお答えします。</p>
             </div>
 
-            <div class="content-body reveal reveal-delay-2">
+            <div class="content-body">
 
                 <div class="faq-container">
                     <!-- FAQ Item 1 -->
                     <details class="faq-item">
                         <summary class="faq-question">
                             <span>Q. Google Workspaceを使うのにお金はかかりますか？</span>
-                            <span class="faq-icon"></span>
                         </summary>
                         <div class="faq-answer">
                             <p><strong>A. 基本的に無料です。</strong></p>
@@ -66,7 +71,6 @@
                     <details class="faq-item">
                         <summary class="faq-question">
                             <span>Q. インターネットがつながっていないと使えませんか？</span>
-                            <span class="faq-icon"></span>
                         </summary>
                         <div class="faq-answer">
                             <p><strong>A. 基本は必要ですが、オフラインでも作業は可能です。</strong></p>
@@ -78,7 +82,6 @@
                     <details class="faq-item">
                         <summary class="faq-question">
                             <span>Q. 私の作ったファイルを、生徒に勝手に見られませんか？</span>
-                            <span class="faq-icon"></span>
                         </summary>
                         <div class="faq-answer">
                             <p><strong>A. 「共有」しない限り、誰にも見られません。</strong></p>
@@ -91,7 +94,6 @@
                     <details class="faq-item">
                         <summary class="faq-question">
                             <span>Q. スマホやタブレットでも使えますか？</span>
-                            <span class="faq-icon"></span>
                         </summary>
                         <div class="faq-answer">
                             <p><strong>A. はい、専用アプリを入れると便利です。</strong></p>
@@ -104,7 +106,6 @@
                     <details class="faq-item">
                         <summary class="faq-question">
                             <span>Q. 間違ってファイルを消してしまいました！復元できますか？</span>
-                            <span class="faq-icon"></span>
                         </summary>
                         <div class="faq-answer">
                             <p><strong>A. 30日以内なら「ゴミ箱」から戻せます。</strong></p>
@@ -117,20 +118,36 @@
             </div>
         </article>
 
-        <footer style="text-align: center; padding: 4rem 2rem; color: var(--text-muted);">
-            <p><a href="index.html" style="color: inherit; text-decoration: none;">&copy; 2025 Life with Google
-                    Workspace</a></p>
-            <div class="creator-credit">
-                <p>Created by <strong>外﨑 顯博</strong> (Akihiro Tozaki)</p>
-                <div class="creator-links">
-                    <a href="https://note.com/tozaki_edu" target="_blank" rel="noopener">Note</a>
-                    <a href="https://researchmap.jp/researchers?q=%E5%A4%96%EF%A8%91%E9%A1%95%E5%8D%9A" target="_blank"
-                        rel="noopener">ResearchMap</a>
-                </div>
-            </div>
-        </footer>
-
+        <div style="text-align: center; margin-top:4rem;">
+            <a href="index.html" class="back-link"
+                style="display:inline-block; padding:0.5rem 1rem; border:1px solid var(--color-border); border-radius:4px; color:var(--color-primary);">←
+                トップページに戻る</a>
+        </div>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Google Workspace ガイド</h3>
+                <p>初心者でも迷わない、現場ですぐ使える活用ノウハウ集。</p>
+            </div>
+            <div class="footer-column">
+                <h3>コンテンツ</h3>
+                <ul class="footer-links">
+                    <li><a href="article-ms-vs-google.html">Officeとの違い</a></li>
+                    <li><a href="article-sharing.html">共有の仕組み</a></li>
+                    <li><a href="article-pdf.html">印刷・PDF</a></li>
+                    <li><a href="article-forms.html">フォーム活用</a></li>
+                    <li><a href="article-ideas.html">活用例</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Created by <strong>外﨑 顯博</strong> (Akihiro Tozaki)</p>
+            <p>&copy; 2025 Life with Google Workspace</p>
+        </div>
+    </footer>
 </body>
 
 </html>

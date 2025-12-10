@@ -9,126 +9,50 @@
     <meta property="og:title" content="校種別・活用アイデア集 | Google Workspace 活用ガイド">
     <meta property="og:description" content="小学校から高校まで、校種別のGoogle Workspace活用事例9選。">
     <meta property="og:type" content="article">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <style>
-        .school-section {
-            margin-bottom: 6rem;
-            /* Increased whitespace for rhythm */
-        }
-
-        .school-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .school-icon {
-            font-size: 2rem;
-            background: white;
-            padding: 0.5rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-
-        .idea-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .idea-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: var(--radius-md);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-            transition: transform 0.2s;
-        }
-
-        .idea-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .idea-card h3 {
-            font-size: 1.1rem;
-            margin: 0 0 0.5rem 0;
-            color: var(--primary-color);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .idea-tool-tag {
-            font-size: 0.75rem;
-            padding: 0.2rem 0.5rem;
-            background: #f3f4f6;
-            color: #4b5563;
-            border-radius: 4px;
-            font-weight: normal;
-            margin-left: auto;
-        }
-
-        [data-theme="dark"] .school-header {
-            border-bottom-color: rgba(255, 255, 255, 0.1);
-        }
-
-        [data-theme="dark"] .school-icon {
-            background: #1f2937;
-        }
-
-        [data-theme="dark"] .idea-card {
-            background: rgba(31, 41, 55, 0.5);
-            border-color: rgba(255, 255, 255, 0.05);
-        }
-
-        [data-theme="dark"] .idea-tool-tag {
-            background: #374151;
-            color: #d1d5db;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo">
-            <span>G</span>Workspace ガイド
-        </a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="article-ms-vs-google.html">違いとは</a></li>
-                <li><a href="article-sharing.html">共有の基本</a></li>
-                <li><a href="article-pdf.html">印刷・PDF</a></li>
-                <li><a href="article-forms.html">フォーム</a></li>
-                <li><a href="article-ideas.html" class="active">活用例</a></li>
-                <li><a href="article-education.html">Education版</a></li>
-                <li><a href="article-security.html">セキュリティ</a></li>
-                <li><a href="article-faq.html">Q&A</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span>G</span>Workspace ガイド
+            </a>
 
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="burger-menu" aria-label="メニューを開く">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="メニュー開閉">
+            <label for="nav-toggle" class="burger-menu" role="button" aria-controls="nav-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="article-ms-vs-google.html">違いとは</a></li>
+                    <li><a href="article-sharing.html">共有の基本</a></li>
+                    <li><a href="article-pdf.html">印刷・PDF</a></li>
+                    <li><a href="article-forms.html">フォーム</a></li>
+                    <li><a href="article-ideas.html" class="active">活用例</a></li>
+                    <li><a href="article-education.html">Education版</a></li>
+                    <li><a href="article-prompts.html">プロンプト集</a></li>
+                    <li><a href="article-security.html">セキュリティ</a></li>
+                    <li><a href="article-faq.html">Q&A</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <article class="article-detail">
-            <a href="index.html" class="back-link">← トップに戻る</a>
-
-            <div class="article-header reveal">
+            <div class="article-header">
                 <h1>校種別・活用アイデア集</h1>
                 <p>明日からの授業や校務ですぐに使える、実践的な活用事例をご紹介します。</p>
             </div>
 
-            <div class="content-body reveal reveal-delay-2">
+            <div class="content-body">
                 <!-- Beginner Intro -->
                 <div class="learning-box">
                     <div class="learning-title">🌱 この記事でわかること</div>
@@ -210,31 +134,63 @@
                     いきなり高度なことをしようとせず、「まずは先生が使ってみる」「係活動で使ってみる」という小さな一歩から始めるのが成功の秘訣です。
                 </div>
 
+                <!-- Google Lesson Library Section -->
+                <div class="school-section">
+                    <div class="school-header">
+                        <div class="school-icon">📚</div>
+                        <div class="header-text">
+                            <h3>公式ライブラリを活用しよう</h3>
+                            <p>Googleが提供する、先生方の実践アイディア集です。</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card"
+                        style="background: white; border: 2px solid var(--color-primary); align-items: center;">
+                        <div class="feature-icon" style="color: #4285F4; background: #E8F0FE;">G</div>
+                        <div class="feature-content" style="flex-grow: 1;">
+                            <h3 style="margin:0; color:var(--color-primary);">Google for Education 活用ライブラリ</h3>
+                            <p style="margin:0.5rem 0;">「授業でどう使う？」のヒントが満載。教科や学年から実践事例を検索できます。</p>
+                            <a href="https://lessonlibrary.withgoogle.com/intl/ALL_jp/" target="_blank" rel="noopener"
+                                class="sim-btn"
+                                style="display:inline-block; margin-top:0.5rem; text-decoration:none; font-size: 0.9rem; padding: 0.5rem 1.5rem;">ライブラリを見る
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </article>
+
+        <div style="text-align: center; margin-top:4rem;">
+            <a href="index.html" class="back-link"
+                style="display:inline-block; padding:0.5rem 1rem; border:1px solid var(--color-border); border-radius:4px; color:var(--color-primary);">←
+                トップページに戻る</a>
+        </div>
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-column">
-                <h3><span>G</span>Workspace ガイド</h3>
-                <p>初心者でも迷わない、現場ですぐ使えるGoogle Workspaceの活用ノウハウ集。</p>
+                <h3>Google Workspace ガイド</h3>
+                <p>初心者でも迷わない、現場ですぐ使える活用ノウハウ集。</p>
             </div>
             <div class="footer-column">
                 <h3>コンテンツ</h3>
-                <div class="creator-links">
-                    <a href="https://note.com/tozaki_edu" target="_blank" rel="noopener">Note</a>
-                    <a href="https://researchmap.jp/researchers?q=%E5%A4%96%EF%A8%91%E9%A1%95%E5%8D%9A" target="_blank"
-                        rel="noopener">ResearchMap</a>
-                </div>
                 <ul class="footer-links">
+                    <li><a href="article-ms-vs-google.html">Officeとの違い</a></li>
+                    <li><a href="article-sharing.html">共有の仕組み</a></li>
+                    <li><a href="article-pdf.html">印刷・PDF</a></li>
                     <li><a href="article-forms.html">フォーム活用</a></li>
                     <li><a href="article-ideas.html">活用例</a></li>
-                    <li><a href="article-education.html">Education版</a></li>
-                    <li><a href="article-security.html">セキュリティ</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
+        </div>
+
+        <div class="copyright">
+            <p>Created by <strong>外﨑 顯博</strong> (Akihiro Tozaki)</p>
+            <p>&copy; 2025 Life with Google Workspace</p>
+        </div>
+    </footer>
 </body>
 
 </html>

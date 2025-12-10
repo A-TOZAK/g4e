@@ -9,46 +9,50 @@
     <meta property="og:title" content="Education版の強み | Google Workspace 活用ガイド">
     <meta property="og:description" content="学校現場導入数No.1。教育版ならではの機能とメリット。">
     <meta property="og:type" content="article">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo">
-            <span>G</span>Workspace ガイド
-        </a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="article-ms-vs-google.html">違いとは</a></li>
-                <li><a href="article-sharing.html">共有の基本</a></li>
-                <li><a href="article-pdf.html">印刷・PDF</a></li>
-                <li><a href="article-forms.html">フォーム</a></li>
-                <li><a href="article-ideas.html">活用例</a></li>
-                <li><a href="article-education.html" class="active">Education版</a></li>
-                <li><a href="article-security.html">セキュリティ</a></li>
-                <li><a href="article-faq.html">Q&A</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span>G</span>Workspace ガイド
+            </a>
 
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="burger-menu" aria-label="メニューを開く">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="メニュー開閉">
+            <label for="nav-toggle" class="burger-menu" role="button" aria-controls="nav-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="article-ms-vs-google.html">違いとは</a></li>
+                    <li><a href="article-sharing.html">共有の基本</a></li>
+                    <li><a href="article-pdf.html">印刷・PDF</a></li>
+                    <li><a href="article-forms.html">フォーム活用</a></li>
+                    <li><a href="article-ideas.html">活用例</a></li>
+                    <li><a href="article-education.html" class="active">Education版</a></li>
+                    <li><a href="article-prompts.html">プロンプト集</a></li>
+                    <li><a href="article-security.html">セキュリティ</a></li>
+                    <li><a href="article-faq.html">Q&A</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <article class="article-detail">
-            <a href="index.html" class="back-link">← トップに戻る</a>
-
-            <div class="article-header reveal">
+        <article>
+            <div class="article-header">
                 <h1>Education版（学校用アカウント）の特徴</h1>
                 <p>個人のGoogleアカウントとは何が違う？教育現場ならではの機能とルール。</p>
             </div>
 
-            <div class="content-body reveal reveal-delay-2">
+            <div class="content-body">
                 <!-- Beginner Intro -->
                 <div class="learning-box">
                     <div class="learning-title">🌱 この記事でわかること</div>
@@ -58,37 +62,50 @@
                         <li>Googleドライブの容量（ストレージ）に関するルール</li>
                     </ul>
                 </div>
+
                 <h2>1. Google Classroomとの連携</h2>
-                <div class="feature-highlight">
-                    <h3>🏫 Google Classroom</h3>
-                    <p>Education版の最大の特徴は、学習管理システム「Google
-                        Classroom」との強力な連携です。課題の配布、回収、採点までをワンストップで行えます。ドキュメントやスライドが自動的に生徒全員に配布される仕組みは、教育現場の働き方を大きく変えました。
-                    </p>
+                <div class="feature-card">
+                    <div class="feature-icon">🏫</div>
+                    <div class="feature-content">
+                        <h3>Google Classroom</h3>
+                        <p>Education版の最大の特徴は、学習管理システム「Google
+                            Classroom」との強力な連携です。課題の配布、回収、採点までをワンストップで行えます。ドキュメントやスライドが自動的に生徒全員に配布される仕組みは、教育現場の働き方を大きく変えました。
+                        </p>
+                    </div>
                 </div>
 
                 <h2>2. 容量無制限（条件あり）とコスト</h2>
                 <p>多くの教育機関向けプランでは、実質的に非常に安価（または無料）で利用でき、かつては容量無制限でした。現在はポリシーが変更されていますが、それでも教育機関にとっては非常にコストパフォーマンスの高い選択肢であり続けています。
                 </p>
 
-                <div class="comparison-table">
-                    <div class="comp-header">
-                        <div class="comp-cell">機能</div>
-                        <div class="comp-cell">一般向け (個人)</div>
-                        <div class="comp-cell">Education版 (教育機関)</div>
-                    </div>
-
-                    <div class="comp-row">
-                        <div class="comp-cell feature-name">Classroom</div>
-                        <div class="comp-cell center" data-label="一般">利用可 (制限あり)</div>
-                        <div class="comp-cell center winner" data-label="Education">フル機能 (成績管理等)</div>
-                    </div>
-
-                    <div class="comp-row">
-                        <div class="comp-cell feature-name">管理機能</div>
-                        <div class="comp-cell center" data-label="一般">なし</div>
-                        <div class="comp-cell center winner" data-label="Education">高度な管理コンソール</div>
-                    </div>
-                </div>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>機能</th>
+                            <th>一般向け (個人)</th>
+                            <th>Education版 (教育機関)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight:700;">Classroom</td>
+                            <td class="center">利用可 (制限あり)</td>
+                            <td class="center" style="background:#f0fdf4; color:#166534; font-weight:700;">フル機能 (成績管理等)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:700;">管理機能</td>
+                            <td class="center">なし</td>
+                            <td class="center" style="background:#f0fdf4; color:#166534; font-weight:700;">高度な管理コンソール
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <style>
+                    .center {
+                        text-align: center;
+                    }
+                </style>
 
                 <h2>3. 協働学習への特化</h2>
                 <p>同時にシートを編集して意見を出し合う「ブレインストーミング」や、スライドを分担して作成する「発表資料作成」など、協働学習（コラボレーション）を前提に設計されています。</p>
@@ -97,34 +114,60 @@
                     <strong>💡 先生方のポイント</strong>
                     「コメント機能」を活用することで、提出された課題に対してリアルタイムでフィードバックを行うことができます。紙の添削よりも迅速で、対話的な指導が可能になります。
                 </div>
+
+                <h2>4. 生成AI「Gemini」の安全な活用</h2>
+                <p>Googleの生成AI「Gemini（ジェミニ）」は、条件付きで義務教育段階（小・中学生）でも利用可能です。教育版ならではの安全な環境が整備されています。</p>
+
+                <div class="feature-card" style="align-items: flex-start;">
+                    <div class="feature-icon"
+                        style="background: linear-gradient(135deg, #4B85E6, #D84236); color: white;">✨</div>
+                    <div class="feature-content" style="flex-grow:1;">
+                        <h3 style="color:var(--color-text-main);">教育機関でのGemini活用のポイント</h3>
+                        <ul style="margin:0; padding-left:1.5rem; line-height:1.8;">
+                            <li><strong>データは学習に使われない：</strong> 教育用アカウントで入力したデータは、AIモデルの学習には使用されません。</li>
+                            <li><strong>年齢に応じたガードレール：</strong> 18歳未満のユーザーには、不適切な回答を防ぐより強力なフィルターが適用されます。</li>
+                            <li><strong>「思考の壁打ち」として：</strong> 答えを教えてもらうのではなく、アイデア出しや、文章の推敲のパートナーとして活用します。</li>
+                        </ul>
+                        <div
+                            style="margin-top:1rem; padding:1rem; background:var(--color-secondary); border-radius:4px; font-size:0.9rem;">
+                            <strong>✅ 活用の第一歩</strong><br>
+                            まずは「保護者へのお便りの下書き」や「運動会のスローガン案出し」など、先生の校務支援から始めてみるのがおすすめです。
+                        </div>
+                    </div>
+                </div>
             </div>
         </article>
+
+        <div style="text-align: center; margin-top:4rem;">
+            <a href="index.html" class="back-link"
+                style="display:inline-block; padding:0.5rem 1rem; border:1px solid var(--color-border); border-radius:4px; color:var(--color-primary);">←
+                トップページに戻る</a>
+        </div>
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-column">
-                <h3><span>G</span>Workspace ガイド</h3>
-                <p>初心者でも迷わない、現場ですぐ使えるGoogle Workspaceの活用ノウハウ集。</p>
+                <h3>Google Workspace ガイド</h3>
+                <p>初心者でも迷わない、現場ですぐ使える活用ノウハウ集。</p>
             </div>
             <div class="footer-column">
                 <h3>コンテンツ</h3>
-                <div class="creator-links">
-                    <a href="https://note.com/tozaki_edu" target="_blank" rel="noopener">Note</a>
-                    <a href="https://researchmap.jp/researchers?q=%E5%A4%96%EF%A8%91%E9%A1%95%E5%8D%9A" target="_blank"
-                        rel="noopener">ResearchMap</a>
-                </div>
                 <ul class="footer-links">
                     <li><a href="article-ms-vs-google.html">Officeとの違い</a></li>
                     <li><a href="article-sharing.html">共有の仕組み</a></li>
-                    <li><a href="article-pdf.html">印刷とPDF</a></li>
+                    <li><a href="article-pdf.html">印刷・PDF</a></li>
                     <li><a href="article-forms.html">フォーム活用</a></li>
                     <li><a href="article-ideas.html">活用例</a></li>
-                    <li><a href="article-education.html" class="active">Education版</a></li>
-                    <li><a href="article-security.html">セキュリティ</a></li>
                 </ul>
             </div>
+        </div>
 
+        <div class="copyright">
+            <p>Created by <strong>外﨑 顯博</strong> (Akihiro Tozaki)</p>
+            <p>&copy; 2025 Life with Google Workspace</p>
+        </div>
+    </footer>
 </body>
 
 </html>

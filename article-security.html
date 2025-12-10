@@ -9,46 +9,50 @@
     <meta property="og:title" content="セキュリティとガイドライン | Google Workspace 活用ガイド">
     <meta property="og:description" content="安全第一。クラウド利用におけるセキュリティの鉄則とガイドライン。">
     <meta property="og:type" content="article">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo">
-            <span>G</span>Workspace ガイド
-        </a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="article-ms-vs-google.html">違いとは</a></li>
-                <li><a href="article-sharing.html">共有の基本</a></li>
-                <li><a href="article-pdf.html">印刷・PDF</a></li>
-                <li><a href="article-forms.html">フォーム</a></li>
-                <li><a href="article-ideas.html">活用例</a></li>
-                <li><a href="article-education.html">Education版</a></li>
-                <li><a href="article-security.html" class="active">セキュリティ</a></li>
-                <li><a href="article-faq.html">Q&A</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span>G</span>Workspace ガイド
+            </a>
 
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="burger-menu" aria-label="メニューを開く">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="メニュー開閉">
+            <label for="nav-toggle" class="burger-menu" role="button" aria-controls="nav-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="article-ms-vs-google.html">違いとは</a></li>
+                    <li><a href="article-sharing.html">共有の基本</a></li>
+                    <li><a href="article-pdf.html">印刷・PDF</a></li>
+                    <li><a href="article-forms.html">フォーム活用</a></li>
+                    <li><a href="article-ideas.html">活用例</a></li>
+                    <li><a href="article-education.html">Education版</a></li>
+                    <li><a href="article-prompts.html">プロンプト集</a></li>
+                    <li><a href="article-security.html" class="active">セキュリティ</a></li>
+                    <li><a href="article-faq.html">Q&A</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <article class="article-detail">
-            <a href="index.html" class="back-link">← トップに戻る</a>
-
-            <div class="article-header reveal">
+        <article>
+            <div class="article-header">
                 <h1>セキュリティとプライバシーの基本</h1>
                 <p>「情報は漏れない？」先生たちが一番気になるセキュリティの疑問にお答えします。</p>
             </div>
 
-            <div class="content-body reveal reveal-delay-2">
+            <div class="content-body">
                 <!-- Beginner Intro -->
                 <div class="learning-box">
                     <div class="learning-title">🌱 この記事でわかること</div>
@@ -58,6 +62,7 @@
                         <li>怪しいメールが届いた時の対処法</li>
                     </ul>
                 </div>
+
                 <h2>1. アカウント管理の鉄則</h2>
                 <p>Google Workspaceのアカウントは、あなた個人の鍵です。「パスワードを他の教職員と共有しない」「共用パソコンでは必ずログアウトする」といった基本的な動作が、最大の防御になります。</p>
 
@@ -67,23 +72,24 @@
 
                 <h2>3. ガイドラインの確認</h2>
                 <p>多くの自治体や学校法人には、「情報セキュリティポリシー」や「利用ガイドライン」が存在します。以下の点を確認しましょう。</p>
+
                 <div class="checklist">
                     <div class="checklist-item">
-                        <span class="checklist-icon">✅</span>
+                        <div class="checklist-icon">✅</div>
                         <div class="checklist-content">
                             <h4>USBメモリへのデータ持ち出し</h4>
                             <p>許可されていますか？紛失リスクが高いため、原則禁止の組織が多いです。</p>
                         </div>
                     </div>
                     <div class="checklist-item">
-                        <span class="checklist-icon">✅</span>
+                        <div class="checklist-icon">✅</div>
                         <div class="checklist-content">
                             <h4>私用端末（スマホ）でのアクセス</h4>
                             <p>許可されていますか？MDM（管理ツール）が入っていない端末からのアクセスは危険です。</p>
                         </div>
                     </div>
                     <div class="checklist-item">
-                        <span class="checklist-icon">✅</span>
+                        <div class="checklist-icon">✅</div>
                         <div class="checklist-content">
                             <h4>個人情報のクラウド保存</h4>
                             <p>成績や住所など、機微な情報は「クラウドNG」のルールがある場合があります。</p>
@@ -97,32 +103,37 @@
                 </div>
             </div>
         </article>
+
+        <div style="text-align: center; margin-top:4rem;">
+            <a href="index.html" class="back-link"
+                style="display:inline-block; padding:0.5rem 1rem; border:1px solid var(--color-border); border-radius:4px; color:var(--color-primary);">←
+                トップページに戻る</a>
+        </div>
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-column">
-                <h3><span>G</span>Workspace ガイド</h3>
-                <p>初心者でも迷わない、現場ですぐ使えるGoogle Workspaceの活用ノウハウ集。</p>
+                <h3>Google Workspace ガイド</h3>
+                <p>初心者でも迷わない、現場ですぐ使える活用ノウハウ集。</p>
             </div>
             <div class="footer-column">
                 <h3>コンテンツ</h3>
-                <div class="creator-links">
-                    <a href="https://note.com/tozaki_edu" target="_blank" rel="noopener">Note</a>
-                    <a href="https://researchmap.jp/researchers?q=%E5%A4%96%EF%A8%91%E9%A1%95%E5%8D%9A" target="_blank"
-                        rel="noopener">ResearchMap</a>
-                </div>
                 <ul class="footer-links">
                     <li><a href="article-ms-vs-google.html">Officeとの違い</a></li>
                     <li><a href="article-sharing.html">共有の仕組み</a></li>
-                    <li><a href="article-pdf.html">印刷とPDF</a></li>
+                    <li><a href="article-pdf.html">印刷・PDF</a></li>
                     <li><a href="article-forms.html">フォーム活用</a></li>
                     <li><a href="article-ideas.html">活用例</a></li>
-                    <li><a href="article-education.html">Education版</a></li>
-                    <li><a href="article-security.html">セキュリティ</a></li>
                 </ul>
             </div>
+        </div>
 
+        <div class="copyright">
+            <p>Created by <strong>外﨑 顯博</strong> (Akihiro Tozaki)</p>
+            <p>&copy; 2025 Life with Google Workspace</p>
+        </div>
+    </footer>
 </body>
 
 </html>

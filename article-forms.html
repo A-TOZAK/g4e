@@ -9,47 +9,50 @@
     <meta property="og:title" content="Googleフォーム活用ガイド | Google Workspace 完全ガイド">
     <meta property="og:description" content="丸付け不要、集計不要。働き方改革の第一歩はフォームから。">
     <meta property="og:type" content="article">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo">
-            <span>G</span>Workspace ガイド
-        </a>
-        <nav>
-            <ul class="nav-links">
-                <!-- Will be updated in next step -->
-                <li><a href="article-ms-vs-google.html">違いとは</a></li>
-                <li><a href="article-sharing.html">共有の基本</a></li>
-                <li><a href="article-pdf.html">印刷・PDF</a></li>
-                <li><a href="article-forms.html" class="active">フォーム</a></li>
-                <li><a href="article-ideas.html">活用例</a></li>
-                <li><a href="article-education.html">Education版</a></li>
-                <li><a href="article-security.html">セキュリティ</a></li>
-                <li><a href="article-faq.html">Q&A</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span>G</span>Workspace ガイド
+            </a>
 
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="burger-menu" aria-label="メニューを開く">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="メニュー開閉">
+            <label for="nav-toggle" class="burger-menu" role="button" aria-controls="nav-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="article-ms-vs-google.html">違いとは</a></li>
+                    <li><a href="article-sharing.html">共有の基本</a></li>
+                    <li><a href="article-pdf.html">印刷・PDF</a></li>
+                    <li><a href="article-forms.html" class="active">フォーム</a></li>
+                    <li><a href="article-ideas.html">活用例</a></li>
+                    <li><a href="article-education.html">Education版</a></li>
+                    <li><a href="article-prompts.html">プロンプト集</a></li>
+                    <li><a href="article-security.html">セキュリティ</a></li>
+                    <li><a href="article-faq.html">Q&A</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <article>
-            <a href="index.html" class="back-link">← トップに戻る</a>
-
-            <div class="article-header reveal">
+            <div class="article-header">
                 <h1>アンケート・小テストの絶対的エース「Googleフォーム」</h1>
                 <p>「紙で配って、回収して、手入力で集計」…その作業、もう終わりにしませんか？</p>
             </div>
 
-            <div class="content-body reveal reveal-delay-2">
+            <div class="content-body">
                 <!-- Beginner Intro -->
                 <div class="learning-box">
                     <div class="learning-title">🌱 この記事でわかること</div>
@@ -107,48 +110,36 @@
             </div>
         </article>
 
-        <footer>
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3><span>G</span>Workspace ガイド</h3>
-                    <p>初心者でも迷わない、現場ですぐ使えるGoogle Workspaceの活用ノウハウ集。</p>
-                </div>
-                <div class="footer-column">
-                    <h3>コンテンツ</h3>
-                    <div class="creator-links">
-                        <a href="https://note.com/tozaki_edu" target="_blank" rel="noopener">Note</a>
-                        <a href="https://researchmap.jp/researchers?q=%E5%A4%96%EF%A8%91%E9%A1%95%E5%8D%9A"
-                            target="_blank" rel="noopener">ResearchMap</a>
-                    </div>
-                    <ul class="footer-links">
-                        <li><a href="article-ms-vs-google.html">Officeとの違い</a></li>
-                        <li><a href="article-sharing.html">共有の仕組み</a></li>
-                        <li><a href="article-pdf.html">印刷とPDF</a></li>
-                        <li><a href="article-forms.html">フォーム活用</a></li>
-                        <li><a href="article-ideas.html">活用例</a></li>
-                        <li><a href="article-education.html">Education版</a></li>
-                        <li><a href="article-security.html">セキュリティ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>リンク</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://workspace.google.com/" target="_blank" rel="noopener">Google Workspace
-                                公式</a></li>
-                        <li><a href="https://support.google.com/" target="_blank" rel="noopener">Google ヘルプ</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="creator-credit">
-                <p>Created by <strong>外﨑 顯博</strong> (Akihiro Tozaki)</p>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Life with Google Workspace</p>
-            </div>
-        </footer>
+        <div style="text-align: center; margin-top:4rem;">
+            <a href="index.html" class="back-link"
+                style="display:inline-block; padding:0.5rem 1rem; border:1px solid var(--color-border); border-radius:4px; color:var(--color-primary);">←
+                トップページに戻る</a>
+        </div>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Google Workspace ガイド</h3>
+                <p>初心者でも迷わない、現場ですぐ使える活用ノウハウ集。</p>
+            </div>
+            <div class="footer-column">
+                <h3>コンテンツ</h3>
+                <ul class="footer-links">
+                    <li><a href="article-ms-vs-google.html">Officeとの違い</a></li>
+                    <li><a href="article-sharing.html">共有の仕組み</a></li>
+                    <li><a href="article-pdf.html">印刷・PDF</a></li>
+                    <li><a href="article-forms.html">フォーム活用</a></li>
+                    <li><a href="article-ideas.html">活用例</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Created by <strong>外﨑 顯博</strong> (Akihiro Tozaki)</p>
+            <p>&copy; 2025 Life with Google Workspace</p>
+        </div>
+    </footer>
 </body>
 
 </html>
